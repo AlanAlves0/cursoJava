@@ -1,0 +1,28 @@
+body{
+    background: salmon;
+    font: normal 18px Arial;
+}
+header{
+    color: white;
+}
+
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: black;
+}
+
+div{
+    text-align: center;
+    padding: 8px;
+}
+
+footer{
+    color: black;
+    text-align: center;
+    
+}

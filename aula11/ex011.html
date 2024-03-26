@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual Seu país</title>
+</head>
+<body>
+    <h1>Seu pais</h1>
+    <input type="text" name="txtp" id="txtp">
+    <input type="button" value="resultado" onclick="resultado()">
+    <div id ='nomepais'></div>
+
+    <script>
+        function resultado(){
+        var txtpas = document.getElementById('txtp')
+        var nomepais = document.querySelector('div#nomepais')
+        var txtre = txtpas.value
+        nomepais.innerHTML = `<p>Seu país é ${txtre}</p>` 
+        confirm(`Seu país é ${txtre} ?`)
+        if(txtre == 'Brasil'){
+            nomepais.innerHTML += `Você é brasileiro`
+        }else{
+            nomepais.innerHTML += `Você é estrangeiro`
+        }
+        }
+    </script>
+</body>
+</html>
